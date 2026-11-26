@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Service d'accompagnement — CULTIVA PRO, formation en ligne et de proximité.">
+<meta name="theme-color" content="#06245d">
+<title>Service d'accompagnement | CULTIVA PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html"><img src="assets/robot-mark.png" alt="" class="brand-mascot"><span class="brand-word">CULTIVA<span> PRO</span><small>Apprendre • Pratiquer • Réussir</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<nav class="main-nav" id="mainNav">
+<a href="index.html">⌂ &nbsp;Accueil</a><a href="index.html#formations">Formations</a>
+<a href="espace-apprenants.html">Espace apprenants</a><a href="professeur-proximite.html">Professeur de proximité</a>
+<a href="service-accompagnement.html">Accompagnement</a><a href="espace-partenaires.html">Partenaires</a>
+<a class="nav-signup" href="index.html#inscription">S'inscrire</a>
+</nav></header>
+<main>
+<section class="inner-page-hero"><span class="eyebrow">DES SOLUTIONS POUR VOS PROJETS</span><h1>Nous vous accompagnons dans vos réalisations</h1><p>Découvrez nos services pratiques et faites-nous part de votre besoin pour recevoir les premières orientations.</p></section>
+<section class="inner-page-content">
+<h2>Des services pour concrétiser vos projets</h2>
+<p>En complément de ses activités de formation, CULTIVA PRO propose un service d'accompagnement destiné aux particuliers, aux organisations et aux porteurs de projets.</p>
+<div class="inner-grid">
+<article class="inner-card"><span class="inner-icon">☀️</span><h3>Installation de panneaux solaires</h3><p>Accompagnement pour les besoins en énergie solaire photovoltaïque.</p></article>
+<article class="inner-card"><span class="inner-icon">🏡</span><h3>Décoration intérieure</h3><p>Conseils et accompagnement pour aménager et valoriser vos espaces.</p></article>
+<article class="inner-card"><span class="inner-icon">🎨</span><h3>Peinture</h3><p>Prestations de peinture pour les bâtiments et les espaces intérieurs.</p></article>
+<article class="inner-card"><span class="inner-icon">💡</span><h3>Électricité du bâtiment</h3><p>Accompagnement pour les travaux et installations électriques du bâtiment.</p></article>
+<article class="inner-card"><span class="inner-icon">📈</span><h3>Consultant en affaires</h3><p>Orientation et conseils pour structurer et développer vos activités.</p></article>
+<article class="inner-card"><span class="inner-icon">🎯</span><h3>Organisez une activité</h3><p>Discutons de vos besoins pour organiser une activité ou un événement.</p></article>
+</div>
+<h2>Demander un accompagnement</h2>
+<form class="inner-form" data-whatsapp-form data-title="DEMANDE DE SERVICE D'ACCOMPAGNEMENT — CULTIVA PRO">
+<label>Nom ou organisation *<input name="nom_ou_organisation" required placeholder="Votre nom ou le nom de votre structure"></label>
+<label>Téléphone / WhatsApp *<input name="telephone" type="tel" required placeholder="+243 ..."></label>
+<label>Service souhaité *<select name="service"><option value="">Choisissez un service</option><option>Installation de panneaux solaires</option><option>Décoration intérieure</option><option>Peinture</option><option>Électricité du bâtiment</option><option>Consultant en affaires</option><option>Organisation d'une activité</option><option>Autre demande</option></select></label>
+<label>Lieu du projet *<input name="lieu" required placeholder="Ville / quartier"></label>
+<label>Description du besoin<textarea name="description" rows="4" placeholder="Présentez votre projet"></textarea></label>
+<button type="submit">Envoyer ma demande sur WhatsApp →</button>
+</form>
+<div class="inner-contact-band"><div><b>Service d'accompagnement CULTIVA PRO</b><p>Contact : +243 971 390 573 · contactcultivapro@gmail.com</p></div><a href="https://wa.me/243971390573">Contacter le service ↗</a></div>
+</section>
+</main>
+<footer class="inner-page-footer">© <span id="innerYear"></span> CULTIVA PRO · <a href="index.html">Accueil</a> · <a href="index.html#formations">Formations</a> · <a href="https://wa.me/243971390573">WhatsApp : +243 971 390 573</a></footer>
+<script>
+const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.textContent=opened?'✕':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));}
+document.getElementById('innerYear').textContent=new Date().getFullYear();
+const form=document.querySelector('[data-whatsapp-form]');
+if(form){form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=[form.dataset.title||'Demande CULTIVA PRO',''];for(const [k,v] of d.entries())lines.push(k.replaceAll('_',' ')+': '+v);const url='https://wa.me/243971390573?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener');});}
+</script>
+</body></html>

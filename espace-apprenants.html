@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Espace apprenants — CULTIVA PRO, formation en ligne et de proximité.">
+<meta name="theme-color" content="#06245d">
+<title>Espace apprenants | CULTIVA PRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html"><img src="assets/robot-mark.png" alt="" class="brand-mascot"><span class="brand-word">CULTIVA<span> PRO</span><small>Apprendre • Pratiquer • Réussir</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<nav class="main-nav" id="mainNav">
+<a href="index.html">⌂ &nbsp;Accueil</a><a href="index.html#formations">Formations</a>
+<a href="espace-apprenants.html">Espace apprenants</a><a href="professeur-proximite.html">Professeur de proximité</a>
+<a href="service-accompagnement.html">Accompagnement</a><a href="espace-partenaires.html">Partenaires</a>
+<a class="nav-signup" href="index.html#inscription">S'inscrire</a>
+</nav></header>
+<main>
+<section class="inner-page-hero"><span class="eyebrow">APPRENDRE · PROGRESSER · RÉUSSIR</span><h1>Votre parcours d'apprentissage commence ici</h1><p>CULTIVA PRO vous accompagne dans l'acquisition de compétences, le renforcement de vos capacités et la préparation à la vie professionnelle.</p></section>
+<section class="inner-page-content">
+<h2>Bienvenue dans votre espace apprenant</h2>
+<p>Nous sommes heureux de vous accueillir sur CULTIVA PRO, votre espace personnel d'apprentissage et de développement professionnel. Notre ambition est de rendre la formation accessible à tous, de favoriser l'acquisition de nouvelles compétences et de préparer chaque apprenant aux opportunités du monde professionnel.</p>
+<p>Grâce à CULTIVA PRO, vous pouvez apprendre à votre rythme, consulter vos cours, développer vos connaissances et vous préparer à exercer une activité professionnelle.</p>
+<div class="inner-grid">
+<article class="inner-card"><span class="inner-icon">📖</span><h3>Apprendre à votre rythme</h3><p>Suivez un parcours de formation adapté à votre disponibilité et à vos objectifs.</p></article>
+<article class="inner-card"><span class="inner-icon">🧠</span><h3>Développer vos compétences</h3><p>Renforcez vos capacités grâce à des connaissances utiles et des exercices pratiques.</p></article>
+<article class="inner-card"><span class="inner-icon">🚀</span><h3>Favoriser votre autonomie</h3><p>Préparez-vous à saisir des opportunités professionnelles et à développer vos propres activités.</p></article>
+</div>
+<div class="inner-highlight"><h3>Nos domaines de formation</h3><p>Informatique et technologies · Français · Anglais · Alphabétisation · Logistique · Entrepreneuriat · Management · Électricité du bâtiment · Peinture · Décoration intérieure · Installation de services numériques · Hôtellerie et autres domaines.</p></div>
+<h2>Contacter le service apprenant</h2><p>Pour toute question concernant votre inscription, votre formation ou votre accompagnement, notre équipe est à votre écoute.</p>
+<div class="inner-contact-band"><div><b>Service apprenant CULTIVA PRO</b><p>WhatsApp / Téléphone : +243 971 390 573 · E-mail : contactcultivapro@gmail.com</p></div><a href="https://wa.me/243971390573?text=Bonjour%20CULTIVA%20PRO%2C%20je%20souhaite%20contacter%20le%20service%20apprenant." target="_blank">Contacter le service ↗</a></div>
+</section>
+</main>
+<footer class="inner-page-footer">© <span id="innerYear"></span> CULTIVA PRO · <a href="index.html">Accueil</a> · <a href="index.html#formations">Formations</a> · <a href="https://wa.me/243971390573">WhatsApp : +243 971 390 573</a></footer>
+<script>
+const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.textContent=opened?'✕':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));}
+document.getElementById('innerYear').textContent=new Date().getFullYear();
+const form=document.querySelector('[data-whatsapp-form]');
+if(form){form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=[form.dataset.title||'Demande CULTIVA PRO',''];for(const [k,v] of d.entries())lines.push(k.replaceAll('_',' ')+': '+v);const url='https://wa.me/243971390573?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener');});}
+</script>
+</body></html>

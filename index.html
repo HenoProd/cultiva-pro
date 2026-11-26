@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CULTIVA PRO — Plateforme de formation en ligne et de proximité : informatique, logistique, langues, entrepreneuriat et compétences professionnelles.">
+  <meta name="theme-color" content="#06245d">
+  <title>CULTIVA PRO — Apprendre • Pratiquer • Réussir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#accueil" aria-label="CULTIVA PRO, accueil">
+    <img src="assets/robot-mark.png" alt="" class="brand-mascot">
+    <span class="brand-word">CULTIVA<span> PRO</span><small>Apprendre • Pratiquer • Réussir</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="mainNav">
+    <a class="nav-active" href="#accueil">⌂ &nbsp;Accueil</a>
+    <a href="espace-apprenants.html">Espace-apprenants</a>
+    <a href="espace-partenaires.html">Partenaires</a>
+    <a href="professeur-proximite.html">Professeur-proximite</a>
+    <a href="service-accompagnement.html">Accompagnement</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-signup" href="#inscription">♟ &nbsp;S'inscrire</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-grid"></div>
+  <div class="hero-copy">
+    <p class="hero-kicker">BIENVENUE SUR <strong>CULTIVA PRO</strong></p>
+    <h1>APPRENDRE <span>•</span> DÉVELOPPER <span>•</span> RÉUSSIR</h1>
+    <p class="hero-description">PLATEFORME DE FORMATION EN LIGNE ET DE PROXIMITÉ</p>
+    <p class="hero-intro">CULTIVA PRO est une plateforme dédiée à l'apprentissage, au renforcement des capacités et au développement des compétences professionnelles.</p>
+    <a class="hero-cta" href="#formations">🎓 &nbsp;Découvrir nos formations <b>→</b></a>
+  </div>
+  <div class="hero-person" role="img" aria-label="Apprenant travaillant sur son ordinateur"></div>
+  <div class="hero-motto">
+    <p>Apprendre<br>aujourd'hui,<br><em>réussir demain !</em></p>
+    <i></i>
+    
+  </div>
+</section>
+
+<section class="formations section-wrap" id="formations">
+  <div class="section-heading"><i></i><h2>Nos 8 formations principales</h2><i></i></div>
+  <div class="featured-carousel" aria-label="Diaporama des formations principales">
+    <button class="carousel-arrow carousel-prev" type="button" aria-label="Formation précédente">‹</button>
+    <div class="featured-slider-viewport">
+      <div class="course-grid featured-course-grid" id="featuredCourseTrack">\n    <article class="course-card">
+      <img src="assets/office.jpg" alt="Informatique">
+      <div class="course-info"><h3>Informatique</h3><p>Bureautique, numérique et informatique</p><button class="course-link" data-course="Informatique">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/logistique.jpg" alt="Logistique">
+      <div class="course-info"><h3>Logistique</h3><p>Gestion des stocks et transport</p><button class="course-link" data-course="Logistique">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/entrepreneuriat.jpg" alt="Entrepreneuriat">
+      <div class="course-info"><h3>Entrepreneuriat</h3><p>Créer et développer une activité</p><button class="course-link" data-course="Entrepreneuriat">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/management.jpg" alt="Management">
+      <div class="course-info"><h3>Management</h3><p>Organisation et gestion d'équipe</p><button class="course-link" data-course="Management">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/electricite-batiment.jpg" alt="Électricité bâtiment">
+      <div class="course-info"><h3>Électricité bâtiment</h3><p>Installation et sécurité électrique</p><button class="course-link" data-course="Électricité bâtiment">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/peinture.jpg" alt="Peinture">
+      <div class="course-info"><h3>Peinture</h3><p>Techniques et finitions</p><button class="course-link" data-course="Peinture">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/decoration-interieure.jpg" alt="Décoration intérieure">
+      <div class="course-info"><h3>Décoration intérieure</h3><p>Aménagement des espaces</p><button class="course-link" data-course="Décoration intérieure">En savoir plus →</button></div>
+    </article>
+    <article class="course-card">
+      <img src="assets/service-numerique.jpg" alt="Installation de services numériques">
+      <div class="course-info"><h3>Installation de services numériques</h3><p>Solutions et équipements numériques</p><button class="course-link" data-course="Installation de services numériques">En savoir plus →</button></div>
+    </article>
+      </div>
+    </div>
+    <button class="carousel-arrow carousel-next" type="button" aria-label="Formation suivante">›</button>
+  </div>
+  <div class="carousel-pagination" id="featuredCarouselDots" aria-label="Navigation du diaporama"></div>
+  <div class="additional-courses">
+    <button type="button" class="other-courses-toggle" id="otherCoursesToggle" aria-expanded="false" aria-controls="otherCoursesPanel">
+      <span><b>Autres formations</b><small>Afficher le catalogue complet des filières disponibles</small></span>
+      <strong class="other-courses-arrow">⌄</strong>
+    </button>
+    <div class="other-courses-panel" id="otherCoursesPanel" hidden>
+      <div class="course-grid other-course-grid">
+        <article class="course-card"><img src="assets/network.jpg" alt="Administration des réseaux"><div class="course-info"><h3>Administration des réseaux</h3><p>Réseaux informatiques et connectivité</p><button class="course-link" data-course="Administration des réseaux">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/web.jpg" alt="Création de sites web"><div class="course-info"><h3>Création de sites web</h3><p>HTML, CSS et hébergement</p><button class="course-link" data-course="Création de sites web">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/python.jpg" alt="Programmation Python"><div class="course-info"><h3>Programmation Python</h3><p>Initiation et projets pratiques</p><button class="course-link" data-course="Programmation Python">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/development.jpg" alt="Développement d'applications web"><div class="course-info"><h3>Développement d'applications web</h3><p>Applications web et bases de données</p><button class="course-link" data-course="Développement d'applications web">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/robotics.jpg" alt="Robotique et domotique"><div class="course-info"><h3>Robotique et domotique</h3><p>Arduino, ESP32 et capteurs</p><button class="course-link" data-course="Robotique et domotique">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/camera.jpg" alt="Vidéosurveillance"><div class="course-info"><h3>Vidéosurveillance</h3><p>Caméras IP, DVR et NVR</p><button class="course-link" data-course="Vidéosurveillance">En savoir plus →</button></div></article>
+        <article class="course-card"><img src="assets/solar.jpg" alt="Énergie solaire photovoltaïque"><div class="course-info"><h3>Énergie solaire photovoltaïque</h3><p>Installation et maintenance</p><button class="course-link" data-course="Énergie solaire photovoltaïque">En savoir plus →</button></div></article>
+        <article class="course-card">
+          <img src="assets/francais.jpg" alt="Drapeau français et apprentissage de la langue française">
+          <div class="course-info"><h3>Français</h3><p>Expression orale, lecture et rédaction</p><button class="course-link" data-course="Français">En savoir plus →</button></div>
+        </article>
+        <article class="course-card">
+          <img src="assets/anglais.jpg" alt="Drapeau britannique et apprentissage de l’anglais">
+          <div class="course-info"><h3>Anglais</h3><p>Communication et anglais pratique</p><button class="course-link" data-course="Anglais">En savoir plus →</button></div>
+        </article>
+        <article class="course-card">
+          <img src="assets/alphabetisation.jpg" alt="Lettres et livre pour l’alphabétisation">
+          <div class="course-info"><h3>Alphabétisation</h3><p>Lecture, écriture et calcul de base</p><button class="course-link" data-course="Alphabétisation">En savoir plus →</button></div>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        <article class="course-card">
+          <img src="assets/hotellerie.jpg" alt="Cloche de réception hôtelière">
+          <div class="course-info"><h3>Hôtellerie</h3><p>Accueil, service et métiers de l'hébergement</p><button class="course-link" data-course="Hôtellerie">En savoir plus →</button></div>
+        </article>
+
+      </div>
+      <p class="other-courses-note">Vous souhaitez suivre une de ces formations ? <a href="#inscription">Ouvrir le formulaire d'inscription</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="feature-row section-wrap" id="apropos">
+  <div class="why-card">
+    <h2>⭐ Pourquoi choisir CULTIVA PRO ?</h2>
+    <ul>
+      <li>✔ Formateurs experts et expérimentés</li>
+      <li>✔ Accès en ligne 24h/24 et 7j/7</li>
+      <li>✔ Certificat à la fin de chaque formation</li>
+      <li>✔ Support technique réactif</li>
+    </ul>
+    <div class="award" aria-hidden="true">🎓</div>
+  </div>
+  <div class="payment-card" id="tarifs">
+    <h2>▣ &nbsp;Inscription en ligne &amp; Paiement sécurisé</h2>
+    <h3>Inscrivez-vous facilement et payez via :</h3>
+    <div class="payment-content">
+      <div class="wallets">
+        <div class="wallet airtel"><b>airtel</b><small>money</small></div>
+        <div class="wallet mpesa"><b>m-pesa</b></div>
+        <div class="wallet orange"><b>orange</b><small>money</small></div>
+      </div>
+      <div class="pay-divider"></div>
+      <div class="pay-number"><b>Numéro de paiement :</b><strong>+243 971 390 573</strong><small>WhatsApp disponible</small></div>
+    </div>
+    <p class="pay-note">Contactez-nous pour connaître les frais de chaque formation et confirmer les modalités de paiement.</p>
+  </div>
+  <div class="contact-card" id="contact">
+    <div class="contact-copy">
+      <h2>🎧 Contactez-nous</h2>
+      <p>☎ &nbsp;+243 971 390 573</p>
+      <p>✉ &nbsp;contact@codepro-rdc.com</p>
+      <p>⌖ &nbsp;RDC – Moanda et Matadi</p>
+      <a href="https://wa.me/243971390573" target="_blank" rel="noopener">Écrire sur WhatsApp ↗</a>
+    </div>
+    <img src="assets/support.jpg" alt="Conseillère du service client">
+  </div>
+</section>
+
+<section class="free-learning-section section-wrap" id="ressources-gratuites">
+  <div class="free-learning-intro">
+    <span class="free-kicker">APPRENDRE SANS FRAIS</span>
+    <h2>Formation biblique gratuite & astuces pratiques</h2>
+    <p>Développez vos connaissances grâce à une formation biblique gratuite. Vous pouvez également consulter notre équipe pour recevoir des astuces gratuites et découvrir une sélection de livres numériques et de ressources pratiques.</p>
+  </div>
+  <div class="free-learning-cards">
+    <article class="free-learning-card bible-card">
+      <span class="free-card-icon" aria-hidden="true">📖</span>
+      <h3>Formation biblique gratuite</h3>
+      <p>Un accompagnement pour approfondir la connaissance de la Bible et grandir dans la foi.</p>
+      <a href="https://wa.me/32468084261?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20la%20formation%20biblique%20gratuite." target="_blank" rel="noopener">Contacter le formateur : +32 468 08 42 61 ↗</a>
+    </article>
+    <article class="free-learning-card tips-card">
+      <span class="free-card-icon" aria-hidden="true">💡</span>
+      <h3>Astuces gratuites & livres numériques</h3>
+      <p>Vous avez besoin de conseils ou d'astuces ? Consultez-nous gratuitement. Plusieurs livres numériques et ressources utiles sont également disponibles.</p>
+      <a href="https://wa.me/32468084261?text=Bonjour%2C%20je%20souhaite%20consulter%20les%20astuces%20gratuites%20et%20les%20livres%20num%C3%A9riques%20disponibles." target="_blank" rel="noopener">Demander les astuces et livres numériques ↗</a>
+    </article>
+  </div>
+</section>
+
+<section class="registration-section" id="inscription" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="registrationTitle">
+  <div class="registration-panel">
+    <button type="button" class="registration-close" id="closeRegistration" aria-label="Fermer le formulaire">×</button>
+    <div class="registration-intro">
+    <span class="eyebrow">REJOIGNEZ CULTIVA PRO</span>
+    <h2 id="registrationTitle">Votre avenir numérique commence ici.</h2>
+    <p>Remplissez votre dossier d'inscription en quelques étapes. Vérifiez vos informations, puis transmettez votre demande à notre équipe sur WhatsApp.</p>
+    <div class="registration-points">
+      <span>✓ Formulaire simple et sécurisé</span>
+      <span>✓ Choix de votre formation</span>
+      <span>✓ Paiement mobile au numéro officiel</span>
+      <span>✓ Assistance de notre équipe</span>
+    </div>
+    <div class="registration-help">
+      <strong>Besoin d'aide ?</strong>
+      <span>Notre équipe vous accompagne pour l'inscription et la confirmation du paiement.</span>
+      <a href="https://wa.me/243971390573" target="_blank" rel="noopener">+243 971 390 573 ↗</a>
+    </div>
+  </div>
+
+  <form id="registrationForm" class="registration-form">
+    <div class="form-topline">
+      <div>
+        <span class="form-kicker">DOSSIER CANDIDAT</span>
+        <h3>Formulaire d'inscription</h3>
+      </div>
+      <span class="required-note">* Champs obligatoires</span>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title"><span>1</span><div><b>Vos informations</b><small>Comment pouvons-nous vous contacter ?</small></div></div>
+      <div class="form-grid">
+        <label>Nom complet <em>*</em>
+          <input name="nom" autocomplete="name" required minlength="3" placeholder="Ex. : Jean-Pierre Kabila">
+        </label>
+        <label>Numéro WhatsApp <em>*</em>
+          <input name="telephone" type="tel" autocomplete="tel" required inputmode="tel" placeholder="+243 9XX XXX XXX">
+        </label>
+        <label>Adresse e-mail <small>(facultatif)</small>
+          <input name="email" type="email" autocomplete="email" placeholder="vous@exemple.com">
+        </label>
+        <label>Ville / Province <em>*</em>
+          <input name="ville" required autocomplete="address-level2" placeholder="Ex. : Matadi, Kongo Central">
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title"><span>2</span><div><b>Votre formation</b><small>Choisissez le programme que vous souhaitez suivre.</small></div></div>
+      <div class="form-grid">
+        <label class="full">Formation souhaitée <em>*</em>
+          <select name="formation" id="formationSelect" required>
+            <option value="">Choisissez votre formation</option>
+            <option>Informatique</option>
+            <option>Logistique</option>
+            <option>Électricité bâtiment</option>
+            <option>Installation de services numériques</option>
+            <option>Bureautique</option>
+            <option>Administration des réseaux</option>
+            <option>Création de sites web</option>
+            <option>Programmation Python</option>
+            <option>Développement d'applications web</option>
+            <option>Robotique et domotique</option>
+            <option>Vidéosurveillance</option>
+            <option>Énergie solaire photovoltaïque</option>
+            <option>Français</option><option>Anglais</option><option>Alphabétisation</option>
+            <option>Gestion de stock et entrepôt</option><option>Gestion des approvisionnements</option>
+            <option>Entrepreneuriat</option><option>Management</option><option>Électricité du bâtiment</option>
+            <option>Peinture</option><option>Décoration intérieure</option><option>Installation de services numériques</option>
+            <option>Hôtellerie</option><option>Autre formation (à préciser)</option>
+          </select>
+        </label>
+        <label>Votre niveau actuel
+          <select name="niveau">
+            <option value="">Sélectionnez votre niveau</option>
+            <option>Débutant</option>
+            <option>Intermédiaire</option>
+            <option>Avancé</option>
+          </select>
+        </label>
+        <label>Mode de formation
+          <select name="mode">
+            <option>En ligne</option>
+            <option>À préciser avec l'administration</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title"><span>3</span><div><b>Informations de paiement</b><small>Indiquez votre moyen de paiement. Ne communiquez jamais votre code PIN.</small></div></div>
+      <div class="payment-choice-grid">
+        <label class="payment-choice">
+          <input type="radio" name="moyen_paiement" value="Airtel Money" required>
+          <span class="payment-choice-logo airtel-logo">airtel<small>money</small></span>
+          <b>Airtel Money</b>
+        </label>
+        <label class="payment-choice">
+          <input type="radio" name="moyen_paiement" value="M-Pesa">
+          <span class="payment-choice-logo mpesa-logo">M</span>
+          <b>M-Pesa</b>
+        </label>
+        <label class="payment-choice">
+          <input type="radio" name="moyen_paiement" value="Orange Money">
+          <span class="payment-choice-logo orange-logo">orange<small>money</small></span>
+          <b>Orange Money</b>
+        </label>
+      </div>
+      <div class="official-payment-number">
+        <span>Numéro officiel de paiement</span>
+        <strong>+243 971 390 573</strong>
+        <small>Vérifiez toujours le numéro avant de confirmer une transaction.</small>
+      </div>
+      <div class="form-grid payment-details-grid">
+        <label class="full">État du paiement <em>*</em>
+          <select name="etat_paiement" id="paymentStatus" required>
+            <option value="Je souhaite d'abord recevoir les frais et les instructions">Je souhaite d'abord recevoir les frais et les instructions</option>
+            <option value="J'ai déjà effectué le paiement">J'ai déjà effectué le paiement</option>
+          </select>
+        </label>
+        <label id="transactionField" class="full conditional-field" hidden>Référence / code de transaction
+          <input name="transaction" id="transactionCode" placeholder="Saisissez la référence figurant sur le reçu">
+        </label>
+        <label id="payerPhoneField" class="full conditional-field" hidden>Numéro utilisé pour le paiement
+          <input name="numero_payeur" id="payerPhone" type="tel" inputmode="tel" placeholder="+243 ...">
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title"><span>4</span><div><b>Dernière étape</b><small>Ajoutez une précision si nécessaire.</small></div></div>
+      <label class="message-label">Message complémentaire <small>(facultatif)</small>
+        <textarea name="message" rows="3" placeholder="Une question ou une précision à communiquer à l'équipe ?"></textarea>
+      </label>
+      <label class="consent-check">
+        <input type="checkbox" name="consentement" required>
+        <span>Je confirme que les informations fournies sont exactes et j'accepte d'être contacté(e) par CULTIVA PRO au sujet de mon inscription. <em>*</em></span>
+      </label>
+    </div>
+
+    <button type="submit" class="submit-button"><span>Envoyer mon dossier sur WhatsApp</span><b>→</b></button>
+    <p class="form-hint" id="formStatus" aria-live="polite">Après validation, WhatsApp s'ouvrira avec le récapitulatif de votre demande. Vous devrez appuyer sur « Envoyer » dans WhatsApp.</p>
+  </form>
+  </div>
+</section>
+<section class="home-services section-wrap" id="services" aria-label="Nos espaces et services">
+  <div class="section-heading"><i></i><h2>Nos espaces et services</h2><i></i></div>
+  <div class="home-service-grid">
+    <a class="home-service-card" href="espace-apprenants.html">
+      <img src="assets/hero-student.jpg" alt="Apprenants en formation">
+      <div class="home-service-overlay"><span>ESPACE</span><h3>Espace apprenants</h3><b>Découvrir l'espace →</b></div>
+    </a>
+    <a class="home-service-card" href="professeur-proximite.html">
+      <img src="assets/support.jpg" alt="Formateur accompagnant un apprenant">
+      <div class="home-service-overlay"><span>FORMATION DE PROXIMITÉ</span><h3>Professeur de proximité</h3><b>Faire une demande →</b></div>
+    </a>
+    <a class="home-service-card" href="service-accompagnement.html">
+      <img src="assets/solar.jpg" alt="Installation de panneaux solaires">
+      <div class="home-service-overlay"><span>ASSISTANCE & PROJETS</span><h3>Service d'accompagnement</h3><b>Voir nos services →</b></div>
+    </a>
+  </div>
+</section>
+
+<section class="partner-section section-wrap" id="partenaires">
+  <div class="partner-card">
+    <div class="partner-symbol">🤝</div>
+    <div class="partner-copy">
+      <span class="eyebrow">COLLABORATION & VISIBILITÉ</span>
+      <h2>Espace partenaire</h2>
+      <p class="partner-lead">Devenez partenaire de notre institution et faites-vous connaître.</p>
+      <p>Vous représentez une institution, une organisation, une entreprise ou un projet qui souhaite travailler avec CULTIVA PRO ? Cet espace est réservé à nos partenaires et aux structures qui souhaitent collaborer avec nous ou présenter leurs services et leurs activités.</p>
+      <p>Nous souhaitons notamment accueillir des partenaires de formation, des institutions comme GFIM World Wide School, ainsi que des organisations désireuses de développer des initiatives communes ou de faire connaître leurs activités.</p>
+      <a class="partner-contact" href="https://wa.me/243971390573?text=Bonjour%20CULTIVA%20PRO%2C%20je%20souhaite%20discuter%20d'un%20partenariat%20ou%20d'un%20espace%20publicitaire." target="_blank" rel="noopener">Proposer un partenariat / une publicité ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="section-heading"><i></i><h2>Questions fréquentes</h2><i></i></div>
+  <details><summary>Comment s'inscrire à une formation ?</summary><p>Cliquez sur « S'inscrire » ou sur « En savoir plus » dans une formation pour ouvrir le formulaire. Votre demande sera ensuite préparée dans WhatsApp.</p></details>
+  <details><summary>Quels moyens de paiement sont acceptés ?</summary><p>Airtel Money, M-Pesa et Orange Money au numéro +243 971 390 573. Contactez l'administration pour confirmer les frais et les modalités avant tout paiement.</p></details>
+  <details><summary>Les formations sont-elles accessibles à distance ?</summary><p>CULTIVA PRO propose des formations en ligne et des formations de proximité. Contactez notre équipe pour connaître les modalités disponibles dans votre domaine et votre localité.</p></details>
+</section>
+
+<section class="login-section" id="connexion">
+  <h2>Espace apprenant</h2>
+  <p>L'espace de connexion des apprenants sera communiqué après validation de l'inscription par l'administration.</p>
+  <a href="https://wa.me/243971390573?text=Bonjour%20CULTIVA%20PRO%2C%20je%20souhaite%20des%20informations%20sur%20mon%20espace%20apprenant." target="_blank" rel="noopener">Contacter l'administration</a>
+</section>
+</main>
+
+<section class="mock-contact-bar" aria-label="Coordonnées et paiements">
+  <div class="mock-contact-item"><b>☎</b><span>+243 971 390 573</span></div>
+  <div class="mock-contact-item"><b>✉</b><span>contactcultivapro@gmail.com</span></div>
+  <div class="mock-contact-item"><b>⌖</b><span>Partout dans le monde</span></div>
+  <div class="mock-payments"><strong>Paiements sécurisés :</strong><span class="mock-airtel">airtel<br><small>money</small></span><span class="mock-mpesa">M-PESA</span><span class="mock-orange">orange<br><small>money</small></span></div>
+  <a class="mock-whatsapp" href="https://wa.me/243971390573" target="_blank" rel="noopener">Nous contacter</a>
+</section>
+<footer class="site-footer">
+  <a class="footer-brand" href="#accueil"><img src="assets/robot-mark.png" alt=""><span>CULTIVA<span> PRO</span></span></a>
+  <p>Ensemble pour une jeunesse qualifiée et innovante</p>
+  <div class="footer-quicklinks"><a href="espace-apprenants.html">Espace apprenants</a><a href="professeur-proximite.html">Professeur de proximité</a><a href="service-accompagnement.html">Service d'accompagnement</a><a href="espace-partenaires.html">Espace partenaires</a></div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+    <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+    <a href="https://wa.me/243971390573" aria-label="WhatsApp">◉</a>
+    <a href="https://t.me/" aria-label="Telegram">➤</a>
+  </div>
+  <small>© <span id="year"></span> CULTIVA PRO. Tous droits réservés. | Apprendre aujourd’hui, réussir demain.</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
