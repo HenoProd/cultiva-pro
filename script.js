@@ -88,7 +88,7 @@ if (openCatalogueLink) {
   drawDots(); render(); restart();
 })();
 
-const WHATSAPP_NUMBER = "243971390573";
+const WHATSAPP_NUMBER = "243900864250 ";
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 const registrationModal = document.getElementById("inscription");
